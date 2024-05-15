@@ -54,7 +54,7 @@
    GOOGLE_API_KEY=your_google_api_key
    ```
 
-    > **Hints:** You can generate a 32-character secret key using the following command: `chainlit generate secret`. To
+    > **Hints:** You can generate a 64-character secret key using the following command: `chainlit create-secret`. To
     > obtain an API key for [Literal](https://literal.chainlit.com), sign up for an account and create a new project.
 
 ## Usage

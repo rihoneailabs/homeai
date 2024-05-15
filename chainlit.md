@@ -45,7 +45,7 @@
 
    ```bash
    DEFAULT_USER_PASSWORD=your_default_user_password
-   CHAINLIT_AUTH_SECRET=your_32_char_chainlit_auth_secret_for_signing_tokens
+   CHAINLIT_AUTH_SECRET=your_64_char_chainlit_auth_secret_for_signing_tokens
    LITERAL_API_KEY=your_literal_api_key_for_storing_chat_history
    
    # Optional: At least one of the following chat providers is required
@@ -54,7 +54,7 @@
    GOOGLE_API_KEY=your_google_api_key
    ```
 
-    > **Hints:** You can generate a 32-character secret key using the following command: `chainlit generate secret`. To
+    > **Hints:** You can generate a 64-character secret key using the following command: `chainlit create-secret`. To
     > obtain an API key for [Literal](https://literal.chainlit.com), sign up for an account and create a new project.
 
 ## Usage
