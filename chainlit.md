@@ -52,6 +52,8 @@
    OPENAI_API_KEY=your_openai_api_key
    ANTHROPIC_API_KEY=your_anthropic_api_key
    GOOGLE_API_KEY=your_google_api_key
+   
+   DEFAULT_USERNAME=your_default_username  # Default: "admin"
    ```
 
     > **Hints:** You can generate a 64-character secret key using the following command: `chainlit create-secret`. To

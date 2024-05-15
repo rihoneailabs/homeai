@@ -55,7 +55,7 @@ async def setup_agent(settings: dict[str, Any]):
 async def start_chat():
     active_chat_profile = cl.user_session.get("chat_profile")
     if active_chat_profile == "ChatGPT":
-        from src.providers._chatgpt import AVATAR, chat_settings, call_chatgpt, user_setttings
+        from src.providers.chatgpt import AVATAR, chat_settings, call_chatgpt, user_setttings
 
         cl.user_session.set("prompt_history", [])
         cl.user_session.set("call_llm", call_chatgpt)
@@ -66,7 +66,7 @@ async def start_chat():
         await AVATAR.send()
 
     elif active_chat_profile == "Claude":
-        from src.providers._claude import AVATAR, chat_settings, call_claude, user_setttings
+        from src.providers.claude import AVATAR, chat_settings, call_claude, user_setttings
 
         cl.user_session.set("prompt_history", "")
         cl.user_session.set("call_llm", call_claude)
@@ -76,7 +76,7 @@ async def start_chat():
 
         await AVATAR.send()
     elif active_chat_profile == "Gemini":
-        from src.providers._gemini import AVATAR, chat_settings, call_gemini, user_setttings
+        from src.providers.gemini import AVATAR, chat_settings, call_gemini, user_setttings
         cl.user_session.set("prompt_history", [])
         cl.user_session.set("call_llm", call_gemini)
         cl.user_session.set("chat_settings", chat_settings)
@@ -88,7 +88,7 @@ async def start_chat():
         await cl.ErrorMessage(f"Unsupported profile: {active_chat_profile}").send()
         return
 
-    await cl.Message(f"Welcome back, ##TODO-USERNAME. {active_chat_profile} is ready to fullfill your requests!").send()
+    await cl.Message(f"Welcome back, ##TODO-USERNAME. {active_chat_profile} is ready to fulfill your requests!").send()
 
 
 @cl.on_message
