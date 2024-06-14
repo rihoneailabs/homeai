@@ -83,8 +83,8 @@ The project structure is organized as follows:
 
 ## Issues
 
-If you have any questions or inquiries, please contact [N Nemakhavhani](mailto://endeesa@yahoo.com). Bugs and issues can
-be reported on the [GitHub Issues](https://github.com/mungana-ai/homeai/issues) page.
+- Bugs and issues can be reported on the [GitHub Issues](https://github.com/mungana-ai/homeai/issues) page.
+- If you have any further questions or inquiries, feel free to [contact us](mailto://info@mungana.com). 
 
 ## License
 
