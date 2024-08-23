@@ -22,7 +22,6 @@ setup(
             "pytest-cov",
             "flake8",
             "black",
-            # Add other development dependencies here
         ]
     },
     entry_points={

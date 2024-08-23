@@ -6,17 +6,18 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY requirements.txt .
 COPY src/ ./src
-COPY app.py setup.py .
+COPY app.py setup.py ./
 
 # Install any needed dependencies specified in requirements.txt
 RUN pip install -r requirements.txt
 
 COPY public/ ./public
 COPY .chainlit/ ./.chainlit
-COPY README.md chainlit.md .
+COPY README.md chainlit.md ./
 
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
+EXPOSE 5500
 ARG PORT=5500
 
 # Command to run the app
