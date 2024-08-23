@@ -2,7 +2,6 @@
 
 * This demo illustrates how to use [Chainlit](https://github.com/Chainlit/chainlit) to build chatbots with LLMs the big
   three AI providers: OpenAI, Anthropic, and Gemini.
-* [Live Demo](https://homeai.chainlit.com)
 
 ## Features
 
@@ -84,8 +83,8 @@ The project structure is organized as follows:
 
 ## Issues
 
-If you have any questions or inquiries, please contact [N Nemakhavhani](mailto://endeesa@yahoo.com). Bugs and issues can
-be reported on the [GitHub Issues]() page.
+- Bugs and issues can be reported on the [GitHub Issues](https://github.com/mungana-ai/homeai/issues) page.
+- If you have any further questions or inquiries, feel free to [contact us](mailto://info@mungana.com). 
 
 ## License
 
